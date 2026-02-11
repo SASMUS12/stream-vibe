@@ -1,3 +1,5 @@
+import '@/styles/exampel.scss'
+
 import { Head } from "minista"
 
 export default function () {
