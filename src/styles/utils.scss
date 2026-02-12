@@ -9,8 +9,8 @@
   @include visually-hidden;
 }
 
-.visually-tablet {
-  @include visually-above {
+.visible-tablet {
+  @include tablet-above {
     display: none !important;
   }
 }
@@ -21,17 +21,14 @@
   }
 }
 
-.visually-mobile {
+.visible-mobile {
   @include mobile-above {
     display: none !important;
-  };
-
+  }
 }
 
 .hidden-mobile {
   @include mobile {
     display: none !important;
   }
-
 }
-
