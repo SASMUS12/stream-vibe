@@ -2,16 +2,28 @@ import './Logo.scss'
 import classNames from 'classnames'
 
 const Logo = (props) => {
-  const {
-    className,
-  } = props
+    const {
+        className,
+        loading = 'lazy'
+    } = props
+  const title='Home'
 
   return (
-    <div
-      className={classNames(className, 'logo')}
+    <a className={classNames(className, 'logo')}
+       href="/"
+       title={title}
+       aria-label={title}
     >
-      Logo
-    </div>
+      <img
+        src="/Logo.svg"
+        alt=""
+        className="logo__image"
+        width={199}
+        height={60}
+        loading={loading}
+      />
+    </a>
+
   )
 }
 
